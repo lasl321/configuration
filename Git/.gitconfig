@@ -17,6 +17,7 @@
 [core]
 	editor = \"C:/Program Files (x86)/Vim/vim74/gvim.exe\"
 	autocrlf = true
+	ignorecase = false
 [diff]
     tool = beyondcompare3
 	guitool = beyondcompare3
@@ -30,3 +31,5 @@
 [difftool "beyondcompare3"]
 	path = C:/Program Files (x86)/Beyond Compare 4/BComp.exe
 	cmd = \"C:/Program Files (x86)/Beyond Compare 4/BComp.exe\" \"$LOCAL\" \"$REMOTE\"
+[push]
+	default = simple

@@ -1,0 +1,32 @@
+[user]
+	email = LSotomayor@futuredontics.com
+	name = Luis Sotomayor
+[alias]
+	st = status
+	pr = pull --rebase
+	co = checkout
+	dt = difftool --no-prompt
+	cl = clean -ffxd
+	mt = mergetool --no-prompt
+	rma = rebase master
+	rom = rebase origin/master
+[color]
+	branch = true
+	diff = true
+	interactive = true
+[core]
+	editor = \"C:/Program Files (x86)/Vim/vim74/gvim.exe\"
+	autocrlf = true
+[diff]
+    tool = beyondcompare3
+	guitool = beyondcompare3
+[merge]
+	tool = p4merge
+[mergetool "p4merge"]
+	path = C:/Program Files/Perforce/p4merge.exe
+	cmd = \"C:/Program Files/Perforce/p4merge.exe\" \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+[mergetool]
+	keepBackup = false
+[difftool "beyondcompare3"]
+	path = C:/Program Files (x86)/Beyond Compare 4/BComp.exe
+	cmd = \"C:/Program Files (x86)/Beyond Compare 4/BComp.exe\" \"$LOCAL\" \"$REMOTE\"
